@@ -1,20 +1,10 @@
-/* Reset some default styles for a cleaner start */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #121212; /* Black background for the entire page */
     color: #ffffff; /* White text color */
     text-align: center;
     padding: 50px;
-}
-
-h1, p {
-    margin-bottom: 20px; /* Space between headings and paragraphs */
+    margin: 0;
 }
 
 .link-box {
@@ -26,6 +16,17 @@ h1, p {
     align-items: center;
     margin: 20px auto;
     width: 400px;
+}
+
+/* Specific styling for the API response box */
+#api-data {
+    background-color: #f0f0f0; /* Light grey background to make it visible */
+    color: #000; /* Black text color for readability */
+    padding: 15px;
+    border: 1px solid #ccc; /* Light border to define the box */
+    border-radius: 5px;
+    margin-top: 10px;
+    min-height: 50px; /* Minimum height to make it visible even when empty */
 }
 
 input[type="text"] {
