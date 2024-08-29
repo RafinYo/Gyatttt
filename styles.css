@@ -1,0 +1,70 @@
+/* Reset some default styles for a cleaner start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Black background for the entire page */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 50px;
+}
+
+h1, p {
+    margin-bottom: 20px; /* Space between headings and paragraphs */
+}
+
+.link-box {
+    background-color: #ffffff; /* White background for the link box */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    margin: 20px auto;
+    width: 400px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border for visibility */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between input and button */
+    width: calc(100% - 22px); /* Adjust for padding */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1e90ff; /* Blue background for button */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c86e3; /* Darker blue on hover */
+}
+
+.link-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* Blue background for links */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+    margin-top: 20px;
+    color: #ffffff; /* Ensure footer text is white */
+}
