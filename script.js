@@ -11,7 +11,12 @@ document.getElementById('bypassButton').addEventListener('click', () => {
 
     // Fetch API data
     fetch(apiEndpoint, requestOptions)
-        .then(response => response.json()) // Parse the JSON response
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json(); // Parse the JSON response
+        })
         .then(data => {
             // Check if the response contains 'bypassed' or 'error'
             const apiDataDiv = document.getElementById('api-data');
@@ -25,6 +30,6 @@ document.getElementById('bypassButton').addEventListener('click', () => {
         })
         .catch(error => {
             console.error('Error fetching data:', error);
-            alert('Failed to bypass the link. Please try again.');
+            document.getElementById('api-data').innerHTML = `<p>Failed to fetch data. Please try again.</p>`;
         });
 });
