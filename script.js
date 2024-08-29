@@ -11,12 +11,7 @@ document.getElementById('bypassButton').addEventListener('click', () => {
 
     // Fetch API data
     fetch(apiEndpoint, requestOptions)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json(); // Parse the JSON response
-        })
+        .then(response => response.json()) // Parse the JSON response
         .then(data => {
             // Check if the response contains 'bypassed' or 'error'
             const apiDataDiv = document.getElementById('api-data');
