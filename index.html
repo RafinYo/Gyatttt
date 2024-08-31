@@ -13,7 +13,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #000;
+            background-color: #87CEFA;
             color: #888;
             font-family: 'Fredoka One', cursive;
             overflow: hidden;
@@ -44,10 +44,9 @@
             position: absolute;
             width: 200%;
             height: 200%;
-            background: url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat;
-            animation: animateStars 60s linear infinite;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
             z-index: -1;
-            backdrop-filter: blur(5px); /* Apply a light blur effect */
         }
 
         @keyframes animateStars {
@@ -60,7 +59,7 @@
         }
 
         .link-box {
-            background-color: rgba(211, 211, 211, 0.8); /* Semi-transparent background */
+            background-color: rgba(211, 211, 211, 0.8);
             padding: 20px;
             border-radius: 10px;
             display: flex;
