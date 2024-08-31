@@ -2,34 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RafinBypassX</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Ensure the path is correct -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: #888;
+            font-family: 'Fredoka One', cursive;
+            overflow: hidden;
+            cursor: url('https://img.icons8.com/ios-filled/50/888888/plus-math.png'), auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            color: #888; 
+            text-decoration: none;
+            background-color: transparent;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button:hover {
+            color: #fff;
+        }
+
+        .stars {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            animation: animateStars 60s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes animateStars {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-1000px);
+            }
+        }
+
+        .link-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            width: 400px;
+            z-index: 1;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: calc(100% - 22px);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #1e90ff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1c86e3;
+        }
+
+        .link-button {
+            display: block;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .link-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to RafinBypassX</h1>
-    <p>Your go-to solution for bypassing services with ease.</p>
-
-    <div class="link-box">
-        <input type="text" id="linkInput" placeholder="Enter your link here">
-        <button id="bypassButton">Bypass</button>
+    <div class="stars"></div>
+    <div>
+        <h1>RafinBypassX</h1>
+        <p style="text-align: center; font-size: 2rem;">Your go-to solution for for roblox executor keys</p>
+        <div class="link-box">
+            <input type="text" id="linkInput" placeholder="Enter your link here">
+            <button id="bypassButton">Bypass</button>
+        </div>
+        <div id="api-data" class="link-box"></div>
+        <div class="link-box">
+            <a href="https://discord.com/invite/VVVfmhsdFM" target="_blank" class="link-button">Join Our Discord Server</a>
+            <a href="https://youtube.com/@rafinexploits?si=a7W6Ksq1nkhpt5lz" target="_blank" class="link-button">Visit Our YouTube Channel</a>
+        </div>
+        <footer>
+            © 2024 All Rights Reserved | Made By imrafin_ | Credits to Xero for subdomain
+        </footer>
     </div>
-
-    <div id="api-data" class="link-box">
-        <!-- API data will be displayed here -->
-    </div>
-
-    <div class="link-box">
-        <!-- Ensure these links are correct and accessible -->
-        <a href="https://discord.com/invite/VVVfmhsdFM" target="_blank" class="link-button">Join Our Discord Server</a>
-        <a href="https://youtube.com/@rafinexploits?si=a7W6Ksq1nkhpt5lz" target="_blank" class="link-button">Visit Our YouTube Channel</a>
-    </div>
-
-    <footer>
-        © 2024 All Rights Reserved
-    </footer>
-    
-    <script src="script.js"></script> <!-- Ensure the path is correct -->
+    <script src="script.js"></script>
 </body>
 </html>
