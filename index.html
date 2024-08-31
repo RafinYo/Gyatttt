@@ -47,6 +47,7 @@
             background: url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat;
             animation: animateStars 60s linear infinite;
             z-index: -1;
+            backdrop-filter: blur(5px); /* Apply a light blur effect */
         }
 
         @keyframes animateStars {
@@ -59,7 +60,7 @@
         }
 
         .link-box {
-            background-color: #D3D3D3;
+            background-color: rgba(211, 211, 211, 0.8); /* Semi-transparent background */
             padding: 20px;
             border-radius: 10px;
             display: flex;
