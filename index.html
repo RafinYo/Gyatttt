@@ -13,7 +13,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #b3cde0;
+            background-color: #000;
+            background-image: url('https://www.transparenttextures.com/patterns/axiom-pattern.png');
             color: #888;
             font-family: 'Fredoka One', cursive;
             overflow: hidden;
@@ -40,15 +41,6 @@
             color: #fff;
         }
 
-        .stars {
-            position: absolute;
-            width: 200%;
-            height: 200%;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            z-index: -1;
-        }
-
         @keyframes animateStars {
             from {
                 transform: translateY(0);
@@ -57,13 +49,70 @@
                 transform: translateY(-1000px);
             }
         }
+
+        .link-box {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            width: 400px;
+            z-index: 1;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: calc(100% - 22px);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .link-button {
+            display: block;
+            padding: 10px 20px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .link-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div class="stars"></div>
     <div>
         <h1>RafinBypassX</h1>
-        <p style="text-align: center; font-size: 2rem;">Your go-to solution for for roblox executor keys</p>
+        <p style="text-align: center; font-size: 2rem;">Your go-to solution for Roblox executor keys</p>
         <div class="link-box">
             <input type="text" id="linkInput" placeholder="Enter your link here">
             <button id="bypassButton">Bypass</button>
@@ -72,6 +121,7 @@
         <div class="link-box">
             <a href="https://discord.com/invite/VVVfmhsdFM" target="_blank" class="link-button">Join Our Discord Server</a>
             <a href="https://youtube.com/@rafinexploits?si=a7W6Ksq1nkhpt5lz" target="_blank" class="link-button">Visit Our YouTube Channel</a>
+            <a href="https://discord.com/invite/YAwbedZWkm" target="_blank" class="link-button">Join Xero's Discord Server</a>
         </div>
         <footer>
             © 2024 All Rights Reserved | Made By imrafin_ | Credits to Xero for helping in lots of stuff
@@ -79,4 +129,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
